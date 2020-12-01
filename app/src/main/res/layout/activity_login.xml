@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGRESA TUS DATOS"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/LG_txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:id="@+id/LG_edCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LG_txtCorreo"
+        android:inputType="textEmailAddress"/>
+    <TextView
+        android:id="@+id/LG_txtClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_below="@+id/LG_edCorreo"/>
+
+
+    <EditText
+        android:id="@+id/LG_edClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LG_txtClave"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/LG_txtOlvidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LG_edClave"
+        android:text="olvidaste tu contraseña?"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LG_txtOlvidar"
+        android:text="Ingresar"
+        android:layout_centerHorizontal="true"
+        android:onClick="tryLogin"/>
+
+
+</RelativeLayout>

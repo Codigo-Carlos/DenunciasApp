@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13106052887",
+    "firebase_url": "https://app-denuncias-xd.firebaseio.com",
+    "project_id": "app-denuncias-xd",
+    "storage_bucket": "app-denuncias-xd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13106052887:android:d7dee8c6f1406ee9b6c152",
+        "android_client_info": {
+          "package_name": "com.gemu404.denunciasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13106052887-7dvkdic5j7vjrb7deu3tdjcur5bj65q7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFHMXAVcyeWy3PsWtIjD2yh5E3fMFLZK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13106052887-7dvkdic5j7vjrb7deu3tdjcur5bj65q7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

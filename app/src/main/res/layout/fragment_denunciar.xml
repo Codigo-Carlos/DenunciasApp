@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.DenunciarFragment"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/S1_txtPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quieres hacer una denuncia?" />
+    <TextView
+        android:id="@+id/S1_txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/S1_txtPregunta"/>
+    <EditText
+        android:id="@+id/S1_etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/S1_txtTitulo"
+        android:inputType="textShortMessage"
+        android:hint="Titulo de la denuncia"/>
+    <TextView
+        android:id="@+id/S1_txtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:layout_below="@+id/S1_etTitulo"/>
+    <EditText
+        android:id="@+id/S1_etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/S1_txtDescripcion"
+        android:hint="Descripcion del suceso"/>
+    <Button
+        android:id="@+id/S1_btnCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Denuncia"
+        android:layout_below="@+id/S1_etDescripcion" />
+
+
+</RelativeLayout>
