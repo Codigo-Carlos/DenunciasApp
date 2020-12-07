@@ -1,14 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.MisDenunciasFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/S2_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:background="@drawable/repeatbackground"
+        android:layout_marginBottom="65dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="new" />
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:scaleX="6"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:scaleX="10"
+            android:rotation="90"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:rotation="270"
+            android:scaleX="10"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:scaleX="6"
+            android:tint="@color/todalapp"
+            android:rotation="180"
+            android:layout_alignParentBottom="true"
+            android:tintMode="multiply"
+            android:layout_marginBottom="60dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corner"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/squarecorner"
+            android:rotation="90"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/squarecorner"
+            android:layout_alignParentBottom="true"
+            android:tint="@color/todalapp"
+            android:rotation="270"
+            android:tintMode="multiply"
+            android:layout_marginBottom="60dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corner"
+            android:layout_alignParentBottom="true"
+            android:tint="@color/todalapp"
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:tintMode="multiply"
+            android:layout_marginBottom="60dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/normal"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

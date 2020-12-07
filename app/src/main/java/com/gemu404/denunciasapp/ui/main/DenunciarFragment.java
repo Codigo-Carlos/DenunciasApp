@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class DenunciarFragment extends Fragment {
 
-    EditText edTitulo,edDescripcion;
+    EditText edTitulo,edDescripcion,edLugar;
     Button btn;
     FirebaseAuth auth;
 
@@ -32,6 +32,7 @@ public class DenunciarFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_denunciar, container, false);
         edTitulo        = view.findViewById(R.id.S1_etTitulo);
         edDescripcion   = view.findViewById(R.id.S1_etDescripcion);
+        edLugar         = view.findViewById(R.id.S1_etLugar);
         btn             = view.findViewById(R.id.S1_btnCrear);
         auth = FirebaseAuth.getInstance();
 
@@ -39,7 +40,7 @@ public class DenunciarFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                if (edTitulo.getText().toString().isEmpty() || edDescripcion.getText().toString().isEmpty()){
+                if (edTitulo.getText().toString().isEmpty() || edDescripcion.getText().toString().isEmpty() || edLugar.getText().toString().isEmpty()){
                     Toast.makeText(getActivity(), "Complete los campos", Toast.LENGTH_SHORT).show();
                 } else {
                     crearDenuncia();
@@ -60,10 +61,12 @@ public class DenunciarFragment extends Fragment {
         DatabaseReference myRef = database.getReference("Denuncias").child(uid);
         Denuncia d = new Denuncia();
         d.setTitulo(edTitulo.getText().toString());
+        d.setLugar(edLugar.getText().toString());
         d.setDescripcion(edDescripcion.getText().toString());
         d.setEstado("0");
         myRef.push().setValue(d);
         edTitulo.setText("");
+        edLugar.setText("");
         edDescripcion.setText("");
     }
 }
