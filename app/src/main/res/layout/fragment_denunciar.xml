@@ -4,46 +4,190 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.DenunciarFragment"
-    android:padding="20dp">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/S1_txtPregunta"
+    android:background="@color/plomoaburrido">
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quieres hacer una denuncia?" />
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+
+
     <TextView
         android:id="@+id/S1_txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Titulo"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/S1_txtPregunta"/>
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/todalapp"
+        android:textSize="25dp"/>
     <EditText
         android:id="@+id/S1_etTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/S1_txtTitulo"
         android:inputType="textShortMessage"
-        android:hint="Titulo de la denuncia"/>
+        android:hint="Titulo de la denuncia"
+        android:textColor="@color/white"/>/>
+
+    <TextView
+        android:id="@+id/S1_txtLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/S1_etTitulo"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/evaorange"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/S1_etLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/S1_txtLugar"
+            android:inputType="textShortMessage"
+            android:hint="lugar donde sucedio"
+            android:textColor="@color/white"/>
+        />
     <TextView
         android:id="@+id/S1_txtDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descripcion"
-        android:layout_below="@+id/S1_etTitulo"/>
+        android:layout_below="@+id/S1_etLugar"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/textos"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
     <EditText
         android:id="@+id/S1_etDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/S1_txtDescripcion"
-        android:hint="Descripcion del suceso"/>
+        android:hint=" Descripcion de la denuncia"
+        android:textColor="@color/white"/>/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:id="@+id/sty_l1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:scaleX="6"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"
+            />
+        <ImageView
+            android:id="@+id/sty_l2a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:rotation="90"
+            android:scaleX="10"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"
+
+            />
+        <ImageView
+            android:id="@+id/sty_l3a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:rotation="270"
+            android:scaleX="10"
+            android:tint="@color/todalapp"
+            android:tintMode="multiply"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/normal"
+            />
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corner"
+            android:tintMode="multiply"
+            android:tint="@color/todalapp"
+            />
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:id="@+id/sty_c2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corner"
+            android:rotation="90"
+            android:layout_alignParentEnd="true"
+            android:tintMode="multiply"
+            android:tint="@color/todalapp"
+            />
+
+        <ImageView
+            android:id="@+id/sty_c3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_alignParentBottom="true"
+            android:tintMode="multiply"
+            android:tint="@color/todalapp"
+            />
+        <ImageView
+            android:id="@+id/sty_c4a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_alignParentBottom="true"
+            android:tintMode="multiply"
+            android:tint="@color/todalapp"
+            android:scaleX="-1"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/S1_txtPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quieres hacer una denuncia?"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/white"/>
     <Button
+        android:background="@drawable/cuadradoboton"
         android:id="@+id/S1_btnCrear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crear Denuncia"
-        android:layout_below="@+id/S1_etDescripcion" />
+        android:text="DENUNCIAR !"
+        android:textSize="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/titulos"
+        />
+
+
+
+
+
+
+
 
 
 </RelativeLayout>
+

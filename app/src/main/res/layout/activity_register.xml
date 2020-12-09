@@ -1,9 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@drawable/repeatbackground">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+    <RelativeLayout
+        android:id="@+id/item_cardlogin"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:scaleX="-1">
+        <include layout="@layout/back_panel_login"/>
+    </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/LG_txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE CUENTA"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/evaorange"
+        android:fontFamily="@font/titulos"
+        android:layout_alignTop="@+id/item_cardlogin"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Lr_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="45dp"
+        app:startIconDrawable="@drawable/ic_mail"
+        android:textColorHint="@color/evaorange"
+        android:layout_below="@+id/LG_txtTitulo"
+        app:startIconTint="@color/evaorange"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        app:boxStrokeColor="@color/evaorange">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Lr_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="45dp"
+        android:textColorHint="@color/evaorange"
+        app:startIconDrawable="@drawable/ic_name"
+        android:layout_below="@+id/Lr_correo"
+        app:startIconTint="@color/evaorange"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        app:boxStrokeColor="@color/evaorange">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Lr_celu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="telefono"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="45dp"
+        app:startIconDrawable="@drawable/ic_phone"
+        android:layout_below="@+id/Lr_nombre"
+        android:textColorHint="@color/evaorange"
+        app:startIconTint="@color/evaorange"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        app:boxStrokeColor="@color/evaorange">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Lr_clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="45dp"
+        app:startIconDrawable="@drawable/ic_lock"
+        android:textColorHint="@color/evaorange"
+        android:layout_below="@+id/Lr_celu"
+        app:startIconTint="@color/evaorange"
+        app:endIconMode="password_toggle"
+        android:maxLines="1"
+        app:boxStrokeColor="@color/evaorange">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lr_clave"
+        android:text="Continuar"
+        android:layout_centerHorizontal="true"
+        android:onClick="CreateUser"
+        android:fontFamily="@font/titulos"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/evaorange"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

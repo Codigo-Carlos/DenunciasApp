@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">DenunciasApp</string>
-    <string name="tab_text_1">MIS DENUNCIAS</string>
-    <string name="tab_text_2">DENUNCIAR</string>
-    <string name="tab_text_3">OTRAS DENUNCIAS</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">r</string>
+    <string name="tab_text_2">o</string>
+    <string name="tab_text_3">e</string>
+    <string name="tab_text_4">v</string>
+    <string name="facebook_app_id">3418206908248713</string>
+    <string name="fb_login_protocol_scheme">fb3418206908248713</string>
+
 </resources>
