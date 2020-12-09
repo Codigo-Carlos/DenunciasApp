@@ -28,18 +28,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         auth=FirebaseAuth.getInstance();
-
-        if(auth.getCurrentUser()==null){
             setContentView(R.layout.activity_register);
             txt_email=findViewById(R.id.Lr_correo);
             txt_nombre=findViewById(R.id.Lr_nombre);
             txt_fono=findViewById(R.id.Lr_celu);
             txt_pass=findViewById(R.id.Lr_clave);
-        }else{
-            Intent intent=new Intent(RegisterActivity.this,LoginActivity.class);
-            startActivity(intent);
-            finish();
-        }
 
 
     }
