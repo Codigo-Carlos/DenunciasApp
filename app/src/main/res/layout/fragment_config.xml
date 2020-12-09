@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.ConfigFragment"
+    android:background="@color/todalapp">
+
+    <TextView
+        android:id="@+id/ccc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESARROLLADORES"
+        android:textColor="@color/evaorange"
+        android:fontFamily="@font/titulos"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/cc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carlos Muños"
+        android:textColor="@color/plomoaburrido"
+        android:fontFamily="@font/titulos"
+        android:textSize="20dp"
+        android:layout_below="@+id/ccc1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/cc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nestor Rojas"
+        android:textColor="@color/plomoaburrido"
+        android:fontFamily="@font/titulos"
+        android:textSize="20dp"
+        android:layout_below="@+id/cc2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/cc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Esta app esta desarrollada para mobiles con relacion de aspecto 21:9 y podria no mostrarse bien en celulares antiguos
+          \n    funciones como inicio por redes sociales pueden no estar del todo implementeadas
+          \n    por problemas con github, esta aplicacion se encuentra en un unico repositorio y puede no mostrarse en sus respectivas bifurcaciónes del proyecto "
+        android:textColor="@color/white"
+        android:fontFamily="@font/titulos"
+        android:textSize="16dp"
+        android:layout_below="@+id/cc3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconectarte"
+        android:fontFamily="@font/titulos"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        />
+
+</RelativeLayout>

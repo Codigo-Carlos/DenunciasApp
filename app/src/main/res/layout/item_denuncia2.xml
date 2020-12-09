@@ -84,20 +84,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aqui va el titulo"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/todalapp"
+        />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/RV_lugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="aqui va la direccion, osea el lugar donde paso, ya sabes"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="15dp"
         android:textSize="12dp"
-        android:maxWidth="375dp"
+        android:maxWidth="310dp"
         android:layout_below="@id/RV_titulo"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/evaorange"/>
     <TextView
         android:id="@+id/RV_descripcion"
         android:layout_width="wrap_content"
@@ -107,6 +112,18 @@
         android:layout_marginTop="35dp"
         android:maxWidth="285dp"
         android:layout_below="@id/RV_titulo"
+        android:fontFamily="@font/textos"
+        android:textColor="@color/white"
+        android:textSize="16dp"
         />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RV_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:layout_toRightOf="@+id/RV_buttonLine"
+        android:layout_below="@+id/RV_buttonLine"
+        android:layout_marginLeft="75dp"
+        android:enabled="false"/>
 
 </RelativeLayout>

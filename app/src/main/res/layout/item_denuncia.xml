@@ -55,10 +55,7 @@
         android:src="@drawable/bsquare"
         android:tintMode="multiply"
         android:tint="@color/botonapp"
-
-
-        android:layout_toRightOf="@+id/RV_buttonLine"
-        android:layout_marginLeft="75dp"/>
+        android:layout_alignParentEnd="true"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,7 +79,9 @@
         android:text="Aqui va el titulo"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="10dp"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/todalapp"/>
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/RV_lugar"
@@ -94,6 +93,8 @@
         android:maxWidth="375dp"
         android:layout_below="@id/RV_titulo"
         android:textStyle="bold"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/evaorange"
         />
     <TextView
         android:id="@+id/RV_descripcion"
@@ -104,6 +105,29 @@
         android:layout_marginTop="35dp"
         android:maxWidth="285dp"
         android:layout_below="@id/RV_titulo"
+        android:fontFamily="@font/textos"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bcorner"
+        android:rotation="180"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/RV_buttonLine"
+        android:layout_marginLeft="75dp"
+        android:tintMode="multiply"
+        android:tint="@color/botonapp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RV_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delete"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/RV_buttonLine"
+        android:hapticFeedbackEnabled="true"
+        android:scaleX="0.8"
         />
 
 </RelativeLayout>

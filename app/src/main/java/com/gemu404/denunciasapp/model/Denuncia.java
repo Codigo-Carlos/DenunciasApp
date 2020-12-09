@@ -3,6 +3,7 @@ package com.gemu404.denunciasapp.model;
 public class Denuncia {
 
     private String id;
+    private String uid;
     private String titulo;
     private String lugar;
     private String descripcion;
@@ -11,6 +12,7 @@ public class Denuncia {
     public  Denuncia(){
 
     }
+
 
     public String getLugar() {
         return lugar;

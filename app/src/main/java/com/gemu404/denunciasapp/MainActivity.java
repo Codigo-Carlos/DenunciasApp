@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         TextView title = findViewById(R.id.title);
-        title.setText(auth.getCurrentUser().getEmail());
+        title.setText("ACCEDISTE COMO " + auth.getCurrentUser().getEmail());
 
     }
 }

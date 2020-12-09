@@ -10,14 +10,11 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.gemu404.denunciasapp.R;
 
-/**
- * A [FragmentPagerAdapter] that returns a fragment corresponding to
- * one of the sections/tabs/pages.
- */
+
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3, R.string.tab_text_4};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -34,6 +31,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return new DenunciarFragment();
             case 2:
                 return new DenunciasFragment();
+            case 3:
+                return new ConfigFragment();
         }
         return null;
     }
@@ -41,13 +40,14 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
+
         return mContext.getResources().getString(TAB_TITLES[position]);
     }
 
     @Override
     public int getCount() {
-        // Show 3 total pages.
+        // Show 4 total pages.
 
-        return 3;
+        return 4;
     }
 }

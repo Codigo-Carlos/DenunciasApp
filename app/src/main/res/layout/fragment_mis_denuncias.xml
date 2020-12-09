@@ -106,5 +106,17 @@
             />
 
     </RelativeLayout>
-
+    <TextView
+        android:id="@+id/S1_txtPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="estas son tus denuncias"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/titulos"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"/>
 </RelativeLayout>
